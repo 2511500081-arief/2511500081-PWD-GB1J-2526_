@@ -56,31 +56,70 @@
     </style>
     <style>
         #Contact {
-            background-color: #f4f9ff;
-            border-radius: 10px;
-            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            padding: 30px 20px;
             max-width: 700px;
-            margin: 30px auto;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            margin: 40px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            z-index: 1;
+        }
+
+        #Contact::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(120deg,
+                    #006eff,
+                    #00c6ff,
+                    #8a2be2,
+                    #00ffd5,
+                    #006eff);
+            background-size: 400% 400%;
+            animation: bgMove 12s ease infinite;
+            z-index: -1;
+            transform: translate(-25%, -25%);
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         #Contact h2 {
-            color: #003366;
             text-align: center;
-            border-bottom: 2px solid #003366;
+            color: #ffffff;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
             padding-bottom: 8px;
             margin-bottom: 20px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
         #Contact form {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            z-index: 1;
         }
 
         #Contact label {
             font-weight: 600;
-            color: #003366;
+            color: #ffffff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         #Contact input[type="text"],
@@ -88,47 +127,70 @@
         #Contact textarea {
             width: 100%;
             padding: 10px 12px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 6px;
             font-size: 14px;
             font-family: Arial, sans-serif;
-            transition: border-color 0.3s, box-shadow 0.3s;
+            background: rgba(255, 255, 255, 0.9);
+            color: #003366;
+            transition: box-shadow 0.3s, transform 0.3s;
         }
 
         #Contact input:focus,
         #Contact textarea:focus {
-            border-color: #006eff;
-            box-shadow: 0 0 4px rgba(0, 110, 255, 0.5);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+            transform: scale(1.02);
             outline: none;
         }
 
         #Contact button {
-            background-color: #006eff;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, #006eff, #00c6ff);
             color: #fff;
             font-weight: bold;
             border: none;
             border-radius: 6px;
-            padding: 10px 15px;
+            padding: 12px 20px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
         }
 
-        #Contact button[type="reset"] {
-            background-color: #999;
+        #Contact button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: skewX(-20deg);
+            transition: left 0.5s ease;
+        }
+
+        #Contact button:hover::before {
+            left: 125%;
         }
 
         #Contact button:hover {
-            background-color: #0052cc;
-            transform: scale(1.03);
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
+                0 0 20px rgba(0, 110, 255, 0.6);
+        }
+
+        #Contact button[type="reset"] {
+            background: linear-gradient(90deg, #999, #666);
         }
 
         #Contact button[type="reset"]:hover {
-            background-color: #777;
+            box-shadow: 0 0 10px rgba(200, 200, 200, 0.6);
         }
 
         @media (max-width: 600px) {
             #Contact {
-                padding: 15px;
+                padding: 20px;
             }
 
             #Contact button {
