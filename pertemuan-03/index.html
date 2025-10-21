@@ -7,8 +7,8 @@
     <title>Tentang Arief</title>
     <style>
         #about {
-            background-color: #17ce54;
-            color: #f0f0f0;
+            background-color: #17ceb0;
+            color: #161616;
             border-radius: 10px;
             padding: 20px;
             max-width: 700PX;
@@ -18,7 +18,7 @@
 
         #about h2 {
             text-align: center;
-            color: #f0f0f0;
+            color: #000000;
             border-bottom: 2px solid #ffffff;
             padding-bottom: 6px;
             margin-top: 0;
@@ -36,7 +36,7 @@
 
         #about strong {
             min-width: 180px;
-            color: #f0f0f0;
+            color: #000000;
             font-weight: 600;
             text-align: right;
             padding-right: 16px;
@@ -116,6 +116,13 @@
             flex-direction: column;
             gap: 15px;
             z-index: 1;
+        }
+
+        #Contact input,
+        #Contact textarea,
+        #Contact button {
+            width: 100%;
+            box-sizing: border-box;
         }
 
         #Contact label {
@@ -238,10 +245,12 @@
                 <input type="text" id="txtnama" name="txtnama" placeholder="Masukkan nama" required autocomplete="name">
 
                 <label for="txtemail">Email:</label>
-                <input type="email" id="txtemail" name="txtemail" placeholder="Masukkan email" required autocomplete="email">
+                <input type="email" id="txtemail" name="txtemail" placeholder="Masukkan email" required
+                    autocomplete="email">
 
                 <label for="txtpesan">Pesan:</label>
-                <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="Tuliskan Pesan anda..." required></textarea>
+                <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="Tuliskan Pesan anda..."
+                    required></textarea>
 
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
