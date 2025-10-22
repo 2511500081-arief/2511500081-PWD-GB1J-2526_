@@ -118,13 +118,6 @@
             z-index: 1;
         }
 
-        #Contact input,
-        #Contact textarea,
-        #Contact button {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
         #Contact label {
             font-weight: 600;
             color: #ffffff;
@@ -143,6 +136,7 @@
             background: rgba(255, 255, 255, 0.9);
             color: #003366;
             transition: box-shadow 0.3s, transform 0.3s;
+            box-sizing: border-box;
         }
 
         #Contact input:focus,
@@ -165,6 +159,8 @@
             font-size: 15px;
             letter-spacing: 0.5px;
             transition: transform 0.2s ease, box-shadow 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         #Contact button::before {
@@ -197,9 +193,46 @@
             box-shadow: 0 0 10px rgba(200, 200, 200, 0.6);
         }
 
+        #Contact .form-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #Contact .form-row label {
+            flex: 0 0 120px;
+            text-align: right;
+        }
+
+        #Contact .form-row input,
+        #Contact .form-row textarea {
+            flex: 1;
+        }
+
+        #Contact .form-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
         @media (max-width: 600px) {
             #Contact {
                 padding: 20px;
+            }
+
+            #Contact .form-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #Contact .form-row label {
+                text-align: left;
+                flex: 1;
+                width: 100%;
+            }
+
+            #Contact .form-buttons {
+                flex-direction: column;
+                width: 100%;
             }
 
             #Contact button {
@@ -207,6 +240,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -241,17 +275,28 @@
         <section id="Contact">
             <h2>Kontak Kami</h2>
             <form action="" method="GET">
+                <div class="form-row">
                 <label for="txtNama">Nama:</label>
-                <input maxlength="10" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+                <input maxlength="10" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
+                    autocomplete="name">
+                </div>
 
+                <div class="form-row">
                 <label for="txtEmail">Email:</label>
-                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
+                    autocomplete="email">
+                </div>    
 
+                <div class="form-row">
                 <label for="txtPesan">Pesan:</label>
-                <textarea rows="4" id="txtPesan" name="txtPesan" placeholder="Tuliskan Pesan anda..." required></textarea>
+                <textarea rows="4" id="txtPesan" name="txtPesan" placeholder="Tuliskan Pesan anda..."
+                    required></textarea>
+                </div>    
 
+                <div class="form-buttons">
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
+                </div>
             </form>
         </section>
     </main>
