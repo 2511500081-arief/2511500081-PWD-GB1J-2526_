@@ -6,240 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Arief</title>
     <style>
-        #about {
-            background-color: #17ceb0;
-            color: #161616;
+        #about,
+        #Contact {
+
+            background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
-            max-width: 700PX;
+            max-width: 700px;
             margin: 20px auto;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        #about h2 {
-            text-align: center;
-            color: #000000;
-            border-bottom: 2px solid #ffffff;
+        #contact button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            margin-right: 8px;
+        }
+
+        #contact button[type="submit"] {
+            background-color: #003366;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #contact button[type="reset"] {
+            background-color: #b4b4b4;
+            color: #272727;
+            font-weight: 500;
+        }
+
+        #contact button[type="submit"]:hover {
+            background-color: #0379ee;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #contact button[type="reset"]:hover {
+            background-color: #cccccc;
+            transform: translateY(-1px);
+        }
+
+        #about h2,
+        #Contact h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
             padding-bottom: 6px;
             margin-top: 0;
             margin-bottom: 16px;
         }
 
-        #about p {
+        #about p,
+        #contact label {
             display: flex;
             justify-content: flex-start;
             align-items: baseline;
             margin: 0;
             padding: 6px 0;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #e6e6e6;
         }
 
-        #about strong {
+        #about strong,
+        #contact label>span {
             min-width: 180px;
-            color: #000000;
+            color: #003366;
             font-weight: 600;
             text-align: right;
             padding-right: 16px;
             flex-shrink: 0;
         }
 
+        #contact input,
+        #contact textarea {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 8px;
+            color: #000;
+            font-weight: normal;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+
         @media (max-width: 600px) {
-            #about p {
+
+
+            #about p,
+            #contact label {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            #about strong {
+            #about strong,
+            #contact label>span {
                 text-align: left;
                 padding-right: 0;
                 margin-bottom: 2px;
+
+                #contact input,
+                #contact textarea,
+                #contact button {
+                    width: 100%;
+                }
+
+                #about strong {
+                    text-align: left;
+                    padding-right: 0;
+                    margin-bottom: 2px;
+                }
+
             }
         }
     </style>
-    <style>
-        #Contact {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            padding: 30px 20px;
-            max-width: 700px;
-            margin: 40px auto;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            color: #fff;
-            z-index: 1;
-        }
 
-        #Contact::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(120deg,
-                    #006eff,
-                    #00c6ff,
-                    #8a2be2,
-                    #00ffd5,
-                    #006eff);
-            background-size: 400% 400%;
-            animation: bgMove 12s ease infinite;
-            z-index: -1;
-            transform: translate(-25%, -25%);
-        }
 
-        @keyframes bgMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        #Contact h2 {
-            text-align: center;
-            color: #ffffff;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        }
-
-        #Contact form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 1;
-        }
-
-        #Contact label {
-            font-weight: 600;
-            color: #ffffff;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        #Contact input[type="text"],
-        #Contact input[type="email"],
-        #Contact textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: none;
-            border-radius: 6px;
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            background: rgba(255, 255, 255, 0.9);
-            color: #003366;
-            transition: box-shadow 0.3s, transform 0.3s;
-            box-sizing: border-box;
-        }
-
-        #Contact input:focus,
-        #Contact textarea:focus {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-            transform: scale(1.02);
-            outline: none;
-        }
-
-        #Contact button {
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(90deg, #006eff, #00c6ff);
-            color: #fff;
-            font-weight: bold;
-            border: none;
-            border-radius: 6px;
-            padding: 12px 20px;
-            cursor: pointer;
-            font-size: 15px;
-            letter-spacing: 0.5px;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        #Contact button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -75%;
-            width: 50%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            transform: skewX(-20deg);
-            transition: left 0.5s ease;
-        }
-
-        #Contact button:hover::before {
-            left: 125%;
-        }
-
-        #Contact button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
-                0 0 20px rgba(0, 110, 255, 0.6);
-        }
-
-        #Contact button[type="reset"] {
-            background: linear-gradient(90deg, #999, #666);
-        }
-
-        #Contact button[type="reset"]:hover {
-            box-shadow: 0 0 10px rgba(200, 200, 200, 0.6);
-        }
-
-        #Contact .form-row {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        #Contact .form-row label {
-            flex: 0 0 120px;
-            text-align: right;
-        }
-
-        #Contact .form-row input,
-        #Contact .form-row textarea {
-            flex: 1;
-        }
-
-        #Contact .form-buttons {
-            display: flex;
-            gap: 10px;
-        }
-
-        @media (max-width: 600px) {
-            #Contact {
-                padding: 20px;
-            }
-
-            #Contact .form-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            #Contact .form-row label {
-                text-align: left;
-                flex: 1;
-                width: 100%;
-            }
-
-            #Contact .form-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            #Contact button {
-                width: 100%;
-            }
-        }
-    </style>
 
 </head>
 
@@ -273,32 +159,25 @@
             <p><strong>Nama Adik:</strong> Annisa Tri Muthiazzahra</p>
         </section>
         <section id="Contact">
-            <h2>Kontak Kami</h2>
-            <form action="" method="GET">
-                <div class="form-row">
-                    <label for="txtNama">Nama:</label>
-                    <input maxlength="10" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
-                        autocomplete="name">
-                </div>
-
-                <div class="form-row">
-                    <label for="txtEmail">Email:</label>
-                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
-                        autocomplete="email">
-                </div>
-
-                <div class="form-row">
-                    <label for="txtPesan">Pesan:</label>
-                    <textarea rows="4" id="txtPesan" name="txtPesan" placeholder="Tuliskan Pesan anda..."
-                        required></textarea>
-                </div>
-
-                <div class="form-buttons">
+            <section id="contact">
+                <h2>Kontak Kami</h2>
+                <form action="" method="GET">
+                    <label for="txtNama"><span>Nama:</span>
+                        <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
+                            autocomplete="name">
+                    </label>
+                    <label for="txtEmail"><span>Email:</span>
+                        <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
+                            autocomplete="email">
+                    </label>
+                    <label for="txtPesan"><span>Pesan Anda:</span>
+                        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                            required></textarea>
+                    </label>
                     <button type="submit">Kirim</button>
                     <button type="reset">Batal</button>
-                </div>
-            </form>
-        </section>
+                </form>
+            </section>
     </main>
     <footer>
         <p>&copy; 2025 Arief Budikurniawan [2511500081]</p>
