@@ -31,6 +31,7 @@ header li a {
     padding: 6px 12px;
 }
 
+#home,
 #about,
 #Contact {
 
@@ -42,6 +43,7 @@ header li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#home h2,
 #about h2,
 #Contact h2 {
     color: #003366;
@@ -49,6 +51,10 @@ header li a {
     padding-bottom: 6px;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+#home p{
+    text-align: justify;
 }
 
 #about p,
