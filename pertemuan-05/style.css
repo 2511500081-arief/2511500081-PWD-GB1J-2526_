@@ -167,7 +167,7 @@ footer {
         top: 8px;
     }
 
-    naf {
+    nav {
         display: none;
         flex-direction: column;
         background: #003366;
@@ -175,7 +175,7 @@ footer {
         padding: 5px 0;
     }
 
-    naf.active {
+    nav.active {
         display: flex;
     }
 
