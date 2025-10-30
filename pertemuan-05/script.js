@@ -7,6 +7,10 @@ document.getElementById("menuToggle").addEventListener("click", function () {
     this.textContent = "\u2630";
   }
 });
+document.getElementById("txtPesan").addEventListener("input", function () {
+  const panjang = this.value.length;
+  document.getElementById("charCount").textContent = panjang + "/200 karakter";
+});
 document.querySelector("form").addEventListener("submit", function (e) {
   const nama = document.getElementById("txtNama");
   const email = document.getElementById("txtEmail");
