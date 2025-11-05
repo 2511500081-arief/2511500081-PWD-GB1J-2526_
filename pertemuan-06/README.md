@@ -6,4 +6,5 @@ Nama: Arief Budikurniawan<br>
 <br>
 <ol>
     <li>Script php Hello World</li>
+    <li>copy index.html, style.css, script.js (pertemuan-05)</li>
 </ol>
