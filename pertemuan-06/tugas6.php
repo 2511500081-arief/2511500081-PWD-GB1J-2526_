@@ -13,19 +13,19 @@ $nilaiTugas2 = 50;
 $nilaiUTS2 = 60;
 $nilaiUAS2 = 80;
 
-$namaMatkul3 = "Matematika"; 
+$namaMatkul3 = "Kalkulus"; 
 $sksMatkul3 = 4;
 $nilaiHadir3 = 80;
-$nilaiTugas3 = 70;
-$nilaiUTS3 = 75;
-$nilaiUAS3 = 80;
+$nilaiTugas3 = 75;
+$nilaiUTS3 = 80;
+$nilaiUAS3 = 85;
 
-$namaMatkul4 = "Fisika";
-$sksMatkul4 = 7;
-$nilaiHadir4 = 85;
-$nilaiTugas4 = 75;
-$nilaiUTS4 = 80;
-$nilaiUAS4 = 85;
+$namaMatkul4 = "Rekayasa Perangkat Lunak";
+$sksMatkul4 = 5;
+$nilaiHadir4 = 80;
+$nilaiTugas4 = 80;
+$nilaiUTS4 = 85;
+$nilaiUAS4 = 90;
 
 $namaMatkul5 = "Pemrograman Web Dasar";
 $sksMatkul5 = 3;
