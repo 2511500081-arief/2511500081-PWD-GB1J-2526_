@@ -33,17 +33,59 @@
         </section>
 
         <section id="about">
+            <?php
+                $NIM = "2511500081";
+                $Nama_Lengkap = "Arief Budikurniawan &#128526;";
+                $Tempat_Lahir = "Tangerang";
+                $Tanggal_Lahir = "24 Agustus 2005";
+                $Hobi = "Mancing, Billiard &#127921; , Mobile Legend &#127918;";
+                $Pasangan = "Gatau ada dimana";
+                $Pekerjaan = "Mahasiswa &copy; 2025";
+                $Nama_Orang_Tua = "Bapak Budi Karyanto dan Ibu Dahlia";
+                $Nama_Kakak = "Ananda Rizky Faudillah";
+                $Nama_Adik = "Annisa Tri Muthiazzahra";
+            ?>
             <h2>Tentang Saya</h2>
-            <p><strong>NIM:</strong> 2511500081.</p>
-            <p><strong>Nama Lengkap:</strong> Arief Budikurniawan &#128526;</p>
-            <p><strong>Tempat Lahir:</strong> Tangerang</p>
-            <p><strong>Tanggal Lahir:</strong> 24 Agustus 2005</p>
-            <p><strong>Hobi:</strong> Mancing, Billiard &#127921; , Mobile Legend &#127918;</p>
-            <p><strong>Pasangan:</strong> Gatau ada dimana</p>
-            <P><strong>Pekerjaan:</strong> Mahasiswa &copy; 2025</P>
-            <p><strong>Nama Orang Tua</strong> Bapak Budi Karyanto dan Ibu Dahlia</p>
-            <p><strong>Nama Kakak:</strong> Ananda Rizky Faudillah</p>
-            <p><strong>Nama Adik:</strong> Annisa Tri Muthiazzahra</p>
+            <p>
+                <strong>NIM:</strong>
+                <?php echo $NIM; ?> 
+            </p>
+            <p>
+                <strong>Nama Lengkap:</strong>
+                <?php echo $Nama_Lengkap; ?>
+            </p>
+            <p>
+                <strong>Tempat Lahir:</strong>
+                <?php echo $Tempat_Lahir; ?>
+            </p>
+            <p>
+                <strong>Tanggal Lahir:</strong>
+                <?php echo $Tanggal_Lahir; ?>
+            </p>
+            <p>
+                <strong>Hobi:</strong>
+                <?php echo $Hobi; ?>
+            </p>
+            <p>
+                <strong>Pasangan:</strong>
+                <?php echo $Pasangan; ?>
+            </p>
+            <P>
+                <strong>Pekerjaan:</strong>
+                <?php echo $Pekerjaan; ?>
+            </P>
+            <p>
+                <strong>Nama Orang Tua</strong>
+                <?php echo $Nama_Orang_Tua; ?>
+            </p>
+            <p>
+                <strong>Nama Kakak:</strong>
+                <?php echo $Nama_Kakak; ?>
+            </p>
+            <p>
+                <strong>Nama Adik:</strong>
+                <?php echo $Nama_Adik; ?>
+            </p>
         </section>
         <section id="Contact">
             <section id="contact">
