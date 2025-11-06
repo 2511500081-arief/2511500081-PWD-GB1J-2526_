@@ -8,6 +8,6 @@ Nama: Arief Budikurniawan<br>
     <li>Script php Hello World</li>
     <li>copy index.html, style.css, script.js (pertemuan-05)</li>
     <li>Variabel php section about</li>
-    <li></li>
-    <li></li>
+    <li>Membuat file baru dengan extension php untuk tugas 6</li>
+    <li>Kalkulasi Nilai Akhir, Grade dan IPK untuk 5 Mata Kuliah</li>
 </ol>
