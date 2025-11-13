@@ -38,6 +38,7 @@ endif;
         <li><a href="#home">Beranda</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#contact">Kontak</a></li>
+        <li><a href="#profil">Biodata</a></li>
       </ul>
     </nav>
   </header>
@@ -47,7 +48,7 @@ endif;
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "nama saya Arief";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
@@ -101,49 +102,20 @@ endif;
 
       </form>
     </section>
-
-
+    
     <section id="about">
-      <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
-      $tempat = "Jebus";
-      ?>
-      <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
-        <?php
-        echo $NIM;
-        ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
-        <?php
-        echo $Nama;
-        ?> &#128526;
-      </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
-
-      <section id="about">
         <h2>Tentang Saya</h2>
-        <p><strong>NIM:</strong> <?= $_SESSION['nim'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Nama Lengkap:</strong> <?= $_SESSION['namaLengkap'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Tempat Lahir:</strong> <?= $_SESSION['tempatLahir'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Tanggal Lahir:</strong> <?= $_SESSION['tanggalLahir'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Hobi:</strong> <?= $_SESSION['hobi'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Pasangan:</strong> <?= $_SESSION['pasangan'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Pekerjaan:</strong> <?= $_SESSION['pekerjaan'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Nama Orang Tua:</strong> <?= $_SESSION['ortu'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Nama Kakak:</strong> <?= $_SESSION['kakak'] ?? 'Belum diisi'; ?></p>
-        <p><strong>Nama Adik:</strong> <?= $_SESSION['adik'] ?? 'Belum diisi'; ?></p>
-      </section>
+        <p><strong>NIM:</strong> <?= $_SESSION['nim'] ?? '2511500081'; ?></p>
+        <p><strong>Nama Lengkap:</strong> <?= $_SESSION['namaLengkap'] ?? 'Arief Budikurniawan &#128526;'; ?></p>
+        <p><strong>Tempat Lahir:</strong> <?= $_SESSION['tempatLahir'] ?? 'Tangerang'; ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?= $_SESSION['tanggalLahir'] ?? '24-08-2005'; ?></p>
+        <p><strong>Hobi:</strong> <?= $_SESSION['hobi'] ?? 'Mancing, Billiard &#127921;, Mobile Legend &#127918;'; ?></p>
+        <p><strong>Pasangan:</strong> <?= $_SESSION['pasangan'] ?? 'Gatau ada dimana'; ?></p>
+        <p><strong>Pekerjaan:</strong> <?= $_SESSION['pekerjaan'] ?? 'Mahasiswa &copy; 2025'; ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?= $_SESSION['ortu'] ?? 'Bapak Budi Karyanto dan Ibu Dahlia'; ?></p>
+        <p><strong>Nama Kakak:</strong> <?= $_SESSION['kakak'] ?? 'Ananda Rizky Faudillah'; ?></p>
+        <p><strong>Nama Adik:</strong> <?= $_SESSION['adik'] ?? 'Annisa Tri Muthiazzahra'; ?></p>
+      
 
     </section>
 
@@ -184,7 +156,7 @@ endif;
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Arief Budikurniawan [2511500081]</p>
   </footer>
 
   <script src="script.js"></script>
