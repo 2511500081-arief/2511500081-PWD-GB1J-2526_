@@ -7,7 +7,7 @@ Nama: Arief Budikurniawan<br>
 <ol>
     <li>copy seluruh file dari elearning untuk latihan pertemuan-07</li>
     <li>copy dan rename index.php menjadi get.php, lalu buat file get_proses.php untuk action</li>
-    <li></li>
+    <li>Isi get_proses.php</li>
     <li></li>
     <li></li>
     <li></li>
