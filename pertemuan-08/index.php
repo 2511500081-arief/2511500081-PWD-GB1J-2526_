@@ -130,6 +130,21 @@ endif;
       <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
       <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
       <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+
+      <section id="about">
+        <h2>Tentang Saya</h2>
+        <p><strong>NIM:</strong> <?= $_SESSION['nim'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Nama Lengkap:</strong> <?= $_SESSION['namaLengkap'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Tempat Lahir:</strong> <?= $_SESSION['tempatLahir'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?= $_SESSION['tanggalLahir'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Hobi:</strong> <?= $_SESSION['hobi'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Pasangan:</strong> <?= $_SESSION['pasangan'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Pekerjaan:</strong> <?= $_SESSION['pekerjaan'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?= $_SESSION['ortu'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Nama Kakak:</strong> <?= $_SESSION['kakak'] ?? 'Belum diisi'; ?></p>
+        <p><strong>Nama Adik:</strong> <?= $_SESSION['adik'] ?? 'Belum diisi'; ?></p>
+      </section>
+
     </section>
 
     <section id="contact">

@@ -12,4 +12,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>buat style untuk section profil</li>
   <li>buat file UTS.php</li>
   <li>atur method POST untuk section #profil</li>
+  <li>atur agar apa yang di ketik di biodata di tampilkan ke section #about</li>
 </ol>
