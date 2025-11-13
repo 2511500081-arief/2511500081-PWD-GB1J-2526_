@@ -9,6 +9,6 @@ Nama: Arief Budikurniawan<br>
     <li>copy dan rename index.php menjadi get.php, lalu buat file get_proses.php untuk action</li>
     <li>Isi get_proses.php</li>
     <li>session get_proses.php</li>
-    <li></li>
+    <li>menampilkan session dari get_proses.php ke get.php</li>
     <li></li>
 </ol>
