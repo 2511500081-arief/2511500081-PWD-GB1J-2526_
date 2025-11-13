@@ -8,5 +8,6 @@ Kelompok: GB1J<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>copy seluruh file dari elearning</li>
-  <li>buat section baru #Form biodata</li>
+  <li>buat section baru #profil</li>
+  <li>buat style untuk section profil</li>
 </ol>

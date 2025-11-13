@@ -52,6 +52,57 @@ endif;
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
+    <section id="profil">
+      <h2>Biodata sederhana Mahasiswa</h2>
+      <form action="UTS.php" method="POST">
+
+        <label for="nim"><span>NIM:</span>
+          <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+        </label>
+
+        <label for="namaLengkap"><span>Nama Lengkap:</span>
+          <input type="text" id="namaLengkap" name="namaLengkap" placeholder="Masukkan nama lengkap" required>
+        </label>
+
+        <label for="tempatLahir"><span>Tempat Lahir:</span>
+          <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Masukkan tempat lahir" required>
+        </label>
+
+        <label for="tanggalLahir"><span>Tanggal Lahir:</span>
+          <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+        </label>
+
+        <label for="hobi"><span>Hobi:</span>
+          <input type="text" id="hobi" name="hobi" placeholder="Contoh: Membaca, Menulis" required>
+        </label>
+
+        <label for="pasangan"><span>Pasangan:</span>
+          <input type="text" id="pasangan" name="pasangan" placeholder="Masukkan nama pasangan">
+        </label>
+
+        <label for="pekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukkan pekerjaan">
+        </label>
+
+        <label for="ortu"><span>Nama Orang Tua:</span>
+          <input type="text" id="ortu" name="ortu" placeholder="Masukkan nama orang tua" required>
+        </label>
+
+        <label for="kakak"><span>Nama Kakak:</span>
+          <input type="text" id="kakak" name="kakak" placeholder="Masukkan nama kakak">
+        </label>
+
+        <label for="adik"><span>Nama Adik:</span>
+          <input type="text" id="adik" name="adik" placeholder="Masukkan nama adik">
+        </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+
+      </form>
+    </section>
+
+
     <section id="about">
       <?php
       $nim = 2511500010;
@@ -104,7 +155,8 @@ endif;
       </form>
 
       <?php if (!empty($sesnama)): ?>
-        <br><hr>
+        <br>
+        <hr>
         <h2>Yang menghubungi kami</h2>
         <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
         <p><strong>Email :</strong> <?php echo $sesemail ?></p>
