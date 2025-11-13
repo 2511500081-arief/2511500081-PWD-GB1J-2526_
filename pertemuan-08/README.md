@@ -10,4 +10,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>copy seluruh file dari elearning</li>
   <li>buat section baru #profil</li>
   <li>buat style untuk section profil</li>
+  <li>buat file UTS.php</li>
+  <li>atur method POST untuk section #profil</li>
 </ol>
