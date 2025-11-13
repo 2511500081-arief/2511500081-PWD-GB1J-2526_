@@ -10,5 +10,5 @@ Nama: Arief Budikurniawan<br>
     <li>Isi get_proses.php</li>
     <li>session get_proses.php</li>
     <li>menampilkan session dari get_proses.php ke get.php</li>
-    <li></li>
+    <li>redirect dari get_proses.php ke get.php</li>
 </ol>
