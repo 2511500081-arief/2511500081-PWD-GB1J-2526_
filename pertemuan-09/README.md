@@ -18,4 +18,5 @@
   <li>gunakan htmlspecialchars untuk mencegah input dari pengguna berubah</li>
   <li>buat file fungsi PHP</li>
   <li>tambah fungsi bersihkan dan fungsi tidakkosong</li>
+  <li>tambah fungsi untuk menghasilkan tanggal sesuai format yang kita inginkan</li>
 </ol>
