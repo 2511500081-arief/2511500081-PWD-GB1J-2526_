@@ -14,4 +14,6 @@
   <li>ubah data POST ke array associative</li>
   <li>session $arrbiodata</li>
   <li>session biodata menggunakan suffix</li>
+  <li>tampilkan array menggunakan looping foreach</li>
+  <li>gunakan htmlspecialchars untuk mencegah input dari pengguna berubah</li>
 </ol>
