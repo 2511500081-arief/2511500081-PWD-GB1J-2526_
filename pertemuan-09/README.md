@@ -12,4 +12,6 @@
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>ubah data POST ke array associative</li>
+  <li>session $arrbiodata</li>
+  <li>session biodata menggunakan suffix</li>
 </ol>
