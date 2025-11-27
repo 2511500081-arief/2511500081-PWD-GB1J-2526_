@@ -16,4 +16,6 @@
   <li>session biodata menggunakan suffix</li>
   <li>tampilkan array menggunakan looping foreach</li>
   <li>gunakan htmlspecialchars untuk mencegah input dari pengguna berubah</li>
+  <li>buat file fungsi PHP</li>
+  <li>tambah fungsi bersihkan dan fungsi tidakkosong</li>
 </ol>
