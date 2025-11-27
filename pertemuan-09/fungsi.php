@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+require_once __DIR__ . '/fungsi.php';
+
+$sesnama = "";
 function bersihkan($str)
 {
     return htmlspecialchars(trim($str));

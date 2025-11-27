@@ -19,4 +19,6 @@
   <li>buat file fungsi PHP</li>
   <li>tambah fungsi bersihkan dan fungsi tidakkosong</li>
   <li>tambah fungsi untuk menghasilkan tanggal sesuai format yang kita inginkan</li>
+  <li>tambah fungsi untuk merender hasil atau output biodata</li>
+  <li>tambah kode untuk menyertakan file fungsi.php dengan kode require_once</li>
 </ol>
