@@ -5,4 +5,5 @@
   <li>buat file baru dengan nama koneksi.php</li>
   <li>buat koneksi ke database MySQL</li>
   <li>buat database dengan nama db_pwd2025</li>
+  <li>buat tabel tbl_tamu di dalam database db_pwd2025</li>
 </ol>  
