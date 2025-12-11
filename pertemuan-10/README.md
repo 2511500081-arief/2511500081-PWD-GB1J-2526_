@@ -10,4 +10,5 @@
   <li>create atau insert record untuk tbl_tamu sebanyak 3 record</li>
   <li>copy file read.php dan rename menjadi read_inc.php</li>
   <li>modif kode pada index.php untuk menampilkan data dari read_inc.php</li>
+  <li>hapus kode pada index.php karena sudah di ambil alih oleh file read_inc.php</li>
 </ol>  
