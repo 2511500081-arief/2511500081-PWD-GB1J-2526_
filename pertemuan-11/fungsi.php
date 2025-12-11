@@ -4,20 +4,13 @@ function redirect_ke($url)
   header("Location: " . $url);
   exit();
 }
-
 function bersihkan($str)
 {
   return htmlspecialchars(trim($str));
 }
-
 function tidakKosong($str)
 {
   return strlen(trim($str)) > 0;
-}
-
-function formatTanggal($tgl)
-{
-  return date("d M Y", strtotime($tgl));
 }
 
 function tampilkanBiodata($conf, $arr)
@@ -27,7 +20,6 @@ function tampilkanBiodata($conf, $arr)
     $label = $v["label"];
     $nilai = bersihkan($arr[$k] ?? '');
     $suffix = $v["suffix"];
-
     $html .= "<p><strong>{$label}</strong> {$nilai}{$suffix}</p>";
   }
   return $html;

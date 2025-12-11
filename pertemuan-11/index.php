@@ -154,7 +154,7 @@ require_once __DIR__ . '/fungsi.php';
         <button type="reset">Batal</button>
       </form>
 
-
+      <?php include("read_inc.php"); ?>
 
     </section>
   </main>
