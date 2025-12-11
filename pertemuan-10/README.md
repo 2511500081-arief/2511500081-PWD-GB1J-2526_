@@ -6,5 +6,6 @@
   <li>buat koneksi ke database MySQL</li>
   <li>buat database dengan nama db_pwd2025</li>
   <li>buat tabel tbl_tamu di dalam database db_pwd2025</li>
-  <li>buat file read.php untuk menampilkan data dari database ke dalam sebuah tabel HTML.</li>
+  <li>buat file read.php untuk menampilkan data dari database ke dalam sebuah tabel HTML</li>
+  <li>create atau insert record untuk tbl_tamu sebanyak 3 record</li>
 </ol>  
