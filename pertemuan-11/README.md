@@ -6,5 +6,6 @@
   <li>tambah penangkap pesan sukses/gagal dari SESSION</li>
   <li>tampilkan flash message</li>
   <li>tampilkan nilai lama dari form untuk antisipasi jika error, pengguna cukup mengubah data yang sudah ada</li>
-  <li>REQUEST_METHOD menggunakan 'POST'</li> 
+  <li>REQUEST_METHOD menggunakan 'POST'</li>
+  <li>ambil data $_POST, trim, htmlspecialchars</li> 
 </ol>  
