@@ -9,5 +9,5 @@
   <li>buat file read.php untuk menampilkan data dari database ke dalam sebuah tabel HTML</li>
   <li>create atau insert record untuk tbl_tamu sebanyak 3 record</li>
   <li>copy file read.php dan rename menjadi read_inc.php</li>
-  <li>ambil data tamu dari tbl_tamu di database lalu tampilkan</li>
+  <li>modif kode pada index.php untuk menampilkan data dari read_inc.php</li>
 </ol>  
