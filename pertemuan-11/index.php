@@ -154,6 +154,10 @@ require_once __DIR__ . '/fungsi.php';
         <button type="reset">Batal</button>
       </form>
 
+      <br>
+      <hr>
+      <h2>Yang menghubungi kami</h2>
+
       <?php include("read_inc.php"); ?>
 
     </section>
