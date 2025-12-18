@@ -87,7 +87,7 @@ if (!empty($old)) {
 
             <form action="proses_update.php" method="POST">
 
-                <input type="text" name="cid" value="<?= (int) $cid; ?>">
+                <input type="hidden" name="cid" value="<?= (int) $cid; ?>">
 
                 <label for="txtNama">
                     <span>Nama:</span>
@@ -113,7 +113,7 @@ if (!empty($old)) {
                 </label>
 
                 <button type="submit">Kirim</button>
-                <buuton type="reset">Batal</button>
+                <button type="reset">Batal</button>
                 <a href="read.php" class="reset">Kembali</a>
             </form>
         </section>
