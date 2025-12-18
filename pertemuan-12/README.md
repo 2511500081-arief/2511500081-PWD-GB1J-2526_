@@ -6,8 +6,8 @@
   <li>tambah link edit, cid di-casting saat output (HTML)</li>
   <li>tambah penampil flash sukses dan flash error</li>
   <li>Buat file baru dengan nama edit.php</li>
-  <li>tambah kode untuk menampilkan form dengan data lama yang dibaca berdasarkan cid</li>
-  <li></li>
-  <li></li>
+  <li>modif kode agar menampilkan form dengan data lama yang dibaca berdasarkan cid</li>
+  <li>buat file baru dengan nama proses_update.php</li>
+  <li>modif kode untuk menyimpan perubahan menggunakan query update dan prepared statement</li>
   <li></li> 
 </ol>  
