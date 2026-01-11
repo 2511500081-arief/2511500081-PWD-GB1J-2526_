@@ -9,5 +9,10 @@
   <li>tambah edit dan delete, redirect PRG</li>
   <li>buat file read_kepastian.php untuk menampilkan hasil record</li>
   <li>tambah tampilan status PRG (sukses/gagal)</li>
-  <li>tambah link edit & delete</li> 
+  <li>tambah link edit & delete</li>
+  <li>buat file edit_kepastian.php</li>
+  <li>tambah kode agar input NIM readonly</li>
+  <li></li>
+  <li></li>
+  <li></li> 
 </ol>  

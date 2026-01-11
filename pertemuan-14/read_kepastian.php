@@ -1,6 +1,6 @@
 <?php
 require 'koneksi.php';
-$data = mysqli_query($conn, "SELECT * FROM biodata_mahasiswa ORDER BY created_at DESC");
+$data = mysqli_query($conn, "SELECT * FROM kepastian ORDER BY created_at DESC");
 $no = 1;
 ?>
 
