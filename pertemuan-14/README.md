@@ -14,5 +14,6 @@
   <li>tambah kode agar input NIM readonly</li>
   <li>buat file update_kepastian.php</li>
   <li>tambah kode validasi → sanitasi → PRG → UPDATE</li>
+  <li>tambah file delete_kepastian.php</li>
   <li></li> 
 </ol>  
