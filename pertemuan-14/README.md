@@ -12,7 +12,7 @@
   <li>tambah link edit & delete</li>
   <li>buat file edit_kepastian.php</li>
   <li>tambah kode agar input NIM readonly</li>
-  <li></li>
-  <li></li>
+  <li>buat file update_kepastian.php</li>
+  <li>tambah kode validasi → sanitasi → PRG → UPDATE</li>
   <li></li> 
 </ol>  
