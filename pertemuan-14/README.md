@@ -7,7 +7,7 @@
   <li>buat file tambah_kepastian.php</li>
   <li>action POST untuk file tambah_kepastian.php</li>
   <li>tambah edit dan delete, redirect PRG</li>
-  <li></li>
-  <li></li>
-  <li></li> 
+  <li>buat file read_kepastian.php untuk menampilkan hasil record</li>
+  <li>tambah tampilan status PRG (sukses/gagal)</li>
+  <li>tambah link edit & delete</li> 
 </ol>  
