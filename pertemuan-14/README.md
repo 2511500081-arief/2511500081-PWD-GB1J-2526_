@@ -8,6 +8,6 @@
   <li>buat file proses_kepastian.php (khusus untuk CRUD tabel kepastian)</li>
   <li>tambah kode untuk ambil input, validasi, simpan data, pesan sukses/eror dan redirect</li>
   <li>buat file read_kepastian.php</li>
-  <li></li>
+  <li>tambah kode untuk mengambil data dari MYSQL dengan select, tampilkan ke halaman, menyediakan tombol edit dan hapus</li>
   <li></li> 
 </ol>  
