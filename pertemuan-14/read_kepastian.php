@@ -1,55 +1,62 @@
 <?php
-require __DIR__ . '/koneksi.php';
+session_start();
+require 'koneksi.php';
+require 'fungsi.php';
 
-$query = "SELECT * FROM kepastian ORDER BY created_at DESC";
-$result = mysqli_query($conn, $query);
+$sql = "SELECT * FROM kepastian ORDER BY cid DESC";
+$q = mysqli_query($conn, $sql);
+if (!$q) {
+    die("Query error: " . mysqli_error($conn));
+}
 ?>
 
-<h3>Data Kepastian (Yang Menghubungi Kami)</h3>
+<?php
+$flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
+$flash_error = $_SESSION['flash_error'] ?? ''; #jika ada error
+#bersihkan session ini
+unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
+?>
 
-<?php if (isset($_GET['status']) && $_GET['status'] == 'sukses'): ?>
-    <div class="alert alert-success">Proses berhasil dilakukan.</div>
-<?php elseif (isset($_GET['status']) && $_GET['status'] == 'gagal'): ?>
-    <div class="alert alert-error">Proses gagal dilakukan.</div>
+<?php if (!empty($flash_sukses)): ?>
+    <div style="padding:10px; margin-bottom:10px; 
+          background:#d4edda; color:#155724; border-radius:6px;">
+        <?= $flash_sukses; ?>
+    </div>
 <?php endif; ?>
 
-<table class="table-data">
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Email</th>
-            <th>Pesan</th>
-            <th>Tanggal</th>
-            <th>Aksi</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php $no = 1; ?>
-        <?php while ($row = mysqli_fetch_assoc($result)): ?>
-            <tr>
-                <td data-label="No">
-                    <?= $no++; ?>
-                </td>
-                <td data-label="Nama">
-                    <?= htmlspecialchars($row['cnama']); ?>
-                </td>
-                <td data-label="Email">
-                    <?= htmlspecialchars($row['cemail']); ?>
-                </td>
-                <td data-label="Pesan">
-                    <?= htmlspecialchars($row['cpesan']); ?>
-                </td>
-                <td data-label="Tanggal">
-                    <?= $row['created_at']; ?>
-                </td>
-                <td data-label="Aksi">
-                    <a class="btn-edit" href="edit_kepastian.php?id=<?= $row['cid']; ?>">Edit</a>
-                    <a class="btn-delete" href="delete_kepastian.php?id=<?= $row['cid']; ?>"
-                        onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
-                </td>
-            </tr>
-        <?php endwhile; ?>
-    </tbody>
+<?php if (!empty($flash_error)): ?>
+    <div style="padding:10px; margin-bottom:10px; 
+          background:#f8d7da; color:#721c24; border-radius:6px;">
+        <?= $flash_error; ?>
+    </div>
+<?php endif; ?>
 
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>No</th>
+        <th>Aksi</th>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Pesan</th>
+        <th>Created At</th>
+    </tr>
+      <?php $i = 1; ?>
+      <?php while ($row = mysqli_fetch_assoc($q)): ?>
+        <tr>
+            <td><?= $i++ ?></td>
+            <td>
+                <a href="edit.php?cid=<?= (int) $row['cid']; ?>">Edit</a>
+                <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')"
+                    href="proses_delete.php?cid=<?= (int) $row['cid']; ?>">Delete</a>
+            </td>
+            <td><?= $row['cid']; ?></td>
+            <td><?= htmlspecialchars($row['cnama']); ?></td>
+            <td><?= htmlspecialchars($row['cemail']); ?></td>
+            <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
+            <td data-label="Tanggal">
+                <?= formatTanggal($row['created_at']); ?>
+            </td>
+        </tr>
+      <?php endwhile; ?>
 </table>

@@ -180,6 +180,7 @@ footer {
   cursor: pointer;
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -253,15 +254,14 @@ footer {
     width: 100%;
   }
 
-  /* ===== RESPONSIVE TABLE (MOBILE) ===== */
-@media (max-width: 600px) {
+  /* ===== RESPONSIVE TABLE ===== */
   .table-data thead {
     display: none;
   }
 
-  .table-data, 
-  .table-data tbody, 
-  .table-data tr, 
+  .table-data,
+  .table-data tbody,
+  .table-data tr,
   .table-data td {
     display: block;
     width: 100%;
@@ -294,10 +294,64 @@ footer {
     text-align: left;
   }
 
-  .btn-edit, .btn-delete {
+  .btn-edit,
+  .btn-delete {
     display: inline-block;
     margin-top: 6px;
   }
-}
 
+  /* ===== TABEL DATA KEPASTIAN ===== */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .table-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  .table-data th,
+  .table-data td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .table-data th {
+    background: #003366;
+    color: #fff;
+  }
+
+  .table-data tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 2px;
+    display: inline-block;
+  }
+
+  .btn-edit {
+    background: #ffc107;
+    color: #000;
+  }
+
+  .btn-delete {
+    background: #dc3545;
+    color: #fff;
+  }
+
+  .btn-edit:hover {
+    background: #e0a800;
+  }
+
+  .btn-delete:hover {
+    background: #c82333;
+  }
 }

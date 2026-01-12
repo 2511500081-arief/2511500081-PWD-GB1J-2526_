@@ -3,6 +3,33 @@ session_start();
 require __DIR__ . '/koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
+/* =======================
+   PROSES FORM BIODATA
+   ======================= */
+if (isset($_POST['txtNim'])) {
+
+    $arrBiodata = [
+        "nim" => $_POST["txtNim"] ?? "",
+        "nama" => $_POST["txtNmLengkap"] ?? "",
+        "tempat" => $_POST["txtT4Lhr"] ?? "",
+        "tanggal" => $_POST["txtTglLhr"] ?? "",
+        "hobi" => $_POST["txtHobi"] ?? "",
+        "pasangan" => $_POST["txtPasangan"] ?? "",
+        "pekerjaan" => $_POST["txtKerja"] ?? "",
+        "ortu" => $_POST["txtNmOrtu"] ?? "",
+        "kakak" => $_POST["txtNmKakak"] ?? "",
+        "adik" => $_POST["txtNmAdik"] ?? ""
+    ];
+
+    $_SESSION["biodata"] = $arrBiodata;
+    redirect_ke("index_kepastian.php#about");
+    exit;
+}
+
+/* =======================
+   PROSES FORM KONTAK
+   ======================= */
+
 # hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
@@ -41,7 +68,7 @@ if ($captcha === '') {
     $errors[] = 'Jawaban captcha salah.';
 }
 
-# jika ada error → simpan old + flash, lalu redirect (PRG)
+# jika ada error
 if (!empty($errors)) {
     $_SESSION['old'] = [
         'nama' => $nama,
@@ -53,7 +80,7 @@ if (!empty($errors)) {
     redirect_ke('index_kepastian.php#contact');
 }
 
-# insert ke tabel kepastian (prepared statement)
+# insert ke tabel kepastian
 $sql = "INSERT INTO kepastian (cnama, cemail, cpesan, created_at) VALUES (?, ?, ?, NOW())";
 $stmt = mysqli_prepare($conn, $sql);
 
