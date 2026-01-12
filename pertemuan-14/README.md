@@ -15,5 +15,6 @@
   <li>tambah kode untuk memproses hasil edit dari edit_kepastian.php</li>
   <li>buat file delete_kepastian.php</li>
   <li>tambah kode untuk menghapus data berdasarkan ID, menjalankan query delete, memberi notifikasi, redirect</li>
-  <li>ubah kode pada index_kepastian.php agar form action dan include read nya sesuai dengan yang telah kita buat</li> 
+  <li>ubah kode pada index_kepastian.php agar form action dan include read nya sesuai dengan yang telah kita buat</li>
+  <li>modif file style.css agar file-file yang baru kita buat menjadi rapi</li> 
 </ol>  

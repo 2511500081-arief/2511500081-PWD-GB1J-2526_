@@ -252,4 +252,52 @@ footer {
   #biodata button {
     width: 100%;
   }
+
+  /* ===== RESPONSIVE TABLE (MOBILE) ===== */
+@media (max-width: 600px) {
+  .table-data thead {
+    display: none;
+  }
+
+  .table-data, 
+  .table-data tbody, 
+  .table-data tr, 
+  .table-data td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-data tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .table-data td {
+    text-align: left;
+    padding: 6px 8px;
+    border: none;
+    position: relative;
+  }
+
+  .table-data td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #003366;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .center {
+    text-align: left;
+  }
+
+  .btn-edit, .btn-delete {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+
 }
