@@ -111,11 +111,11 @@ require_once __DIR__ . '/fungsi.php';
         </section>
 
         <?php
-        $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
-        $flash_error = $_SESSION['flash_error'] ?? ''; #jika ada error
-        $old = $_SESSION['old'] ?? []; #untuk nilai lama form
-        
-        unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']); #bersihkan 3 session ini
+        $flash_sukses = $_SESSION['flash_sukses'] ?? '';
+        $flash_error = $_SESSION['flash_error'] ?? '';
+        $old = $_SESSION['old'] ?? [];
+
+        unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
         ?>
 
         <section id="contact">
@@ -133,7 +133,8 @@ require_once __DIR__ . '/fungsi.php';
                 </div>
             <?php endif; ?>
 
-            <form action="proses.php" method="POST">
+            <!-- PERBEDAAN: action ke proses_kepastian.php -->
+            <form action="proses_kepastian.php" method="POST">
 
                 <label for="txtNama"><span>Nama:</span>
                     <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
@@ -156,14 +157,17 @@ require_once __DIR__ . '/fungsi.php';
                         value="<?= isset($old['captcha']) ? htmlspecialchars($old['captcha']) : '' ?>">
                 </label>
 
-                <button type=" submit">Kirim</button>
+                <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
             </form>
 
             <br>
             <hr>
             <h2>Yang menghubungi kami</h2>
-            <?php include 'read_inc.php'; ?>
+
+            <!-- PERBEDAAN: include read_kepastian.php -->
+            <?php include 'read_kepastian.php'; ?>
+
         </section>
     </main>
 
