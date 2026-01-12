@@ -12,5 +12,6 @@
   <li>buat file edit_kepastian.php</li>
   <li>tambah kode untuk menampilkan form edit berdasarkan ID data</li>
   <li>buat file update_kepastian.php</li>
-  <li>tambah kode untuk memproses hasil edit dari edit_kepastian.php</li> 
+  <li>tambah kode untuk memproses hasil edit dari edit_kepastian.php</li>
+  <li>buat file delete_kepastian.php</li> 
 </ol>  
