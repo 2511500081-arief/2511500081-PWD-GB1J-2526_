@@ -6,7 +6,7 @@
   <li>buat file index_kepastian.php untuk form action</li>
   <li>copas isi file index.php ke file index_kepastian.php</li>
   <li>buat file proses_kepastian.php (khusus untuk CRUD tabel kepastian)</li>
-  <li></li>
+  <li>tambah kode untuk ambil input, validasi, simpan data, pesan sukses/eror dan redirect</li>
   <li></li>
   <li></li>
   <li></li> 
