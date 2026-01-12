@@ -9,5 +9,5 @@
   <li>tambah kode untuk ambil input, validasi, simpan data, pesan sukses/eror dan redirect</li>
   <li>buat file read_kepastian.php</li>
   <li>tambah kode untuk mengambil data dari MYSQL dengan select, tampilkan ke halaman, menyediakan tombol edit dan hapus</li>
-  <li></li> 
+  <li>buat file edit_kepastian.php</li> 
 </ol>  
