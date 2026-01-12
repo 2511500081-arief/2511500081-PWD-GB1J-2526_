@@ -10,5 +10,6 @@
   <li>buat file read_kepastian.php</li>
   <li>tambah kode untuk mengambil data dari MYSQL dengan select, tampilkan ke halaman, menyediakan tombol edit dan hapus</li>
   <li>buat file edit_kepastian.php</li>
-  <li>tambah kode untuk menampilkan form edit berdasarkan ID data</li> 
+  <li>tambah kode untuk menampilkan form edit berdasarkan ID data</li>
+  <li>buat file update_kepastian.php</li> 
 </ol>  
