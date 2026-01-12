@@ -2,7 +2,7 @@
 
 <ol>
   <li>ekstrak bahan tryout</li>
-  <li></li>
+  <li>ekstrak file localhost.sql</li>
   <li></li>
   <li></li>
   <li></li>

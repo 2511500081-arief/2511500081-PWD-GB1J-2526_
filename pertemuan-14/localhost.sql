@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 07, 2026 at 03:47 AM
+-- Generation Time: Jan 12, 2026 at 09:55 AM
 -- Server version: 8.0.30
--- PHP Version: 7.4.19
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,6 +26,27 @@ USE `db_pwd2025`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `kepastian`
+--
+
+CREATE TABLE `kepastian` (
+  `cid` int NOT NULL,
+  `cnama` varchar(100) DEFAULT NULL,
+  `cemail` varchar(100) DEFAULT NULL,
+  `cpesan` text,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `kepastian`
+--
+
+INSERT INTO `kepastian` (`cid`, `cnama`, `cemail`, `cpesan`, `created_at`) VALUES
+(1, 'Arief Budikurniawan', '2511500081@mahasiswa.atmaluhur.ac.id', 'ap aja dicoba pokonya', '2026-01-12 15:54:49');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_tamu`
 --
 
@@ -34,20 +55,31 @@ CREATE TABLE `tbl_tamu` (
   `cnama` varchar(100) DEFAULT NULL,
   `cemail` varchar(100) DEFAULT NULL,
   `cpesan` text,
-  `dcreated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `tbl_tamu`
 --
 
-INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `dcreated_at`) VALUES
-(20, 'Nur Faddddd', 'a@gmail.com', 'sadadas faedfasd', '2025-12-24 12:21:52'),
-(21, 'nicolas lim', 'sada@i.com', 'kskakds a da', '2025-12-24 12:22:04');
+INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `created_at`) VALUES
+(1, 'Arief Budikurniawan', '2511500081@mahasiswa.atmaluhur.ac.id', 'Bismillah Headshot', '2025-12-11 22:25:33'),
+(2, 'Salsa korban php', 'salsabilarimadany@gmail.com', 'Kasian ya ga jadi official', '2025-12-11 22:25:33'),
+(3, 'Ijan suka jajan', 'ijan212@gmail.com', 'Aku ijan, aku suka makan', '2025-12-11 22:25:33'),
+(5, 'thinkpad user', 'arf@mail.com', 'selamat mengerjakan', '2025-12-11 22:25:33'),
+(7, 'Arief', '2511500081@mahasiswa.atmaluhur.ac.id', 'Semoga Kuat', '2026-01-11 17:48:26'),
+(8, 'arief', 'arf@mail.com', 'apa aja dicoba', '2026-01-11 17:49:50'),
+(9, 'Arief Budikurniawan', '2511500081@mahasiswa.atmaluhur.ac.id', 'apa aj deh', '2026-01-12 15:46:12');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `kepastian`
+--
+ALTER TABLE `kepastian`
+  ADD PRIMARY KEY (`cid`);
 
 --
 -- Indexes for table `tbl_tamu`
@@ -60,10 +92,16 @@ ALTER TABLE `tbl_tamu`
 --
 
 --
+-- AUTO_INCREMENT for table `kepastian`
+--
+ALTER TABLE `kepastian`
+  MODIFY `cid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `tbl_tamu`
 --
 ALTER TABLE `tbl_tamu`
-  MODIFY `cid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `cid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
