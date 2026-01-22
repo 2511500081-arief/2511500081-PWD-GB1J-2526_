@@ -13,7 +13,7 @@
   <li>buat file delete_kepastian.php</li>
   <li>tambah proses hapus, hapus data berdasarkan kode, tambah konfirmasi, lalu redirect ke halaman read</li>
   <li>buat file index_kepastian.php untuk form action</li>
-  <li></li>
+  <li>ubah kode pada index_kepastian.php agar form action dan include read nya sesuai dengan yang telah kita buat</li>
   <li></li>
   <li></li>
   <li></li> 
