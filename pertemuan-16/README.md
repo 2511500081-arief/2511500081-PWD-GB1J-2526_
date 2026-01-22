@@ -7,7 +7,7 @@
   <li>tambah validasi data, simpan ke database, dan redirect (PRG)</li>
   <li>buat file read_kepastian.php untuk menampilkan data dan dengan tombol edit&delete</li>
   <li>buat file edit_kepastian.php</li>
-  <li></li>
+  <li>set untuk form edit, tidak bisa ubah primary key, mengambil data lama berdasarkan kode</li>
   <li></li>
   <li></li>
   <li></li>
