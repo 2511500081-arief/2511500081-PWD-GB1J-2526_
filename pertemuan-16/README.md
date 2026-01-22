@@ -12,7 +12,7 @@
   <li>tambah proses update (update tahap 2), simpan perubahan data dan redirect ke halaman read</li>
   <li>buat file delete_kepastian.php</li>
   <li>tambah proses hapus, hapus data berdasarkan kode, tambah konfirmasi, lalu redirect ke halaman read</li>
-  <li></li>
+  <li>buat file index_kepastian.php untuk form action</li>
   <li></li>
   <li></li>
   <li></li>
