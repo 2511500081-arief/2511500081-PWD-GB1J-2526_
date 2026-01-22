@@ -9,8 +9,8 @@
   <li>buat file edit_kepastian.php</li>
   <li>set untuk form edit, tidak bisa ubah primary key, mengambil data lama berdasarkan kode</li>
   <li>buat file update_kepastian.php</li>
-  <li></li>
-  <li></li>
+  <li>tambah proses update (update tahap 2), simpan perubahan data dan redirect ke halaman read</li>
+  <li>buat file delete_kepastian.php</li>
   <li></li>
   <li></li>
   <li></li>
