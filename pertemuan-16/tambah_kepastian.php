@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nama_mantan = bersihkan($_POST['nama_mantan']);
 
     if ($kode_pengunjung == '' || $nama_pengunjung == '') {
-        header("Location: index.php?status=kosong");
+        header("Location: index_kepastian.php?status=kosong");
         exit;
     }
 
@@ -29,6 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     mysqli_query($conn, $sql);
 
-    header("Location: read_uang.php?status=sukses");
+    header("Location: read_kepastian.php?status=sukses");
     exit;
 }
